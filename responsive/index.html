@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>responsive</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="./Playstation_Img/logo.png" alt="logo" class="logo">
+            <nav>
+                <ul id="menu">
+                    <li><a href="#">Controles</a></li>
+                    <li><a href="#">Juegos</a></li>
+                    <li><a href="#">Realidad Virtual</a></li>
+                    <li><a href="#">Otros</a></li>
+                </ul>
+            </nav>
+            <img src="./Playstation_Img/menu.png" alt="menu" class="menu-icon" onclick="toogle()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>Ps4 <br/> Controles de play 4</h2>
+                <h3>Controles inalanbricos</h3>
+                <p>(compatible generico)</p>
+                <h4>$30.50</h4>
+                <button type="button">Compra<img src="/Playstation_Img/arrow.png"/></button>
+            </div>
+            <div class="col-2">
+                <img src="/Playstation_Img/controller.png" alt="control" class="control">
+                <div class="colorbox"></div>
+                <div class="add-btn">
+                    <img src="/Playstation_Img/add.png" alt="add">
+                    <p><small>Añadir al carrito</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="social">
+            <img src="/Playstation_Img/fb.png" alt="">
+            <img src="/Playstation_Img/ig.png" alt="">
+            <img src="/Playstation_Img/tw.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        var menuL = document.getElementById("menu")
+        menuL.style.maxHeight= "0px";
+
+        function toogle(){
+            if (menuL.style.maxHeight== "0px")
+            {
+                menuL.style.maxHeight= "130px";
+            }
+            else{
+                menuL.style.maxHeight= "0px";
+            }
+        }
+    </script>
+</body>
+</html>

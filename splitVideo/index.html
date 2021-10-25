@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="side" id="side1">
+            <video src="bg.mp4" type="video/mp4" autoplay loop></video>
+        </div>
+        <div class="side" id="side2">
+            <video src="bg.mp4" type="video/mp4" autoplay loop></video>
+        </div>
+    </section>
+    <div class="content">
+        <h2>contenido</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fuga, repudiandae corrupti accusamus expedita
+            voluptate consequatur explicabo eos vero debitis animi? Nesciunt quia quos consectetur quasi, provident
+            ratione eligendi fugiat.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe harum odit eaque eveniet aliquam eligendi
+            nam sunt, dolore excepturi quisquam consectetur voluptatem itaque pariatur dolores quos id voluptate
+            praesentium sed!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio vel doloremque ut fugit maxime nemo aut
+            est, eum, illo laboriosam sit ullam repellendus soluta recusandae consequatur iste quos et nisi?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fuga, repudiandae corrupti accusamus expedita
+            voluptate consequatur explicabo eos vero debitis animi? Nesciunt quia quos consectetur quasi, provident
+            ratione eligendi fugiat.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe harum odit eaque eveniet aliquam eligendi
+            nam sunt, dolore excepturi quisquam consectetur voluptatem itaque pariatur dolores quos id voluptate
+            praesentium sed!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio vel doloremque ut fugit maxime nemo aut
+            est, eum, illo laboriosam sit ullam repellendus soluta recusandae consequatur iste quos et nisi?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fuga, repudiandae corrupti accusamus expedita
+            voluptate consequatur explicabo eos vero debitis animi? Nesciunt quia quos consectetur quasi, provident
+            ratione eligendi fugiat.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe harum odit eaque eveniet aliquam eligendi
+            nam sunt, dolore excepturi quisquam consectetur voluptatem itaque pariatur dolores quos id voluptate
+            praesentium sed!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio vel doloremque ut fugit maxime nemo aut
+            est, eum, illo laboriosam sit ullam repellendus soluta recusandae consequatur iste quos et nisi?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut fuga, repudiandae corrupti accusamus expedita
+            voluptate consequatur explicabo eos vero debitis animi? Nesciunt quia quos consectetur quasi, provident
+            ratione eligendi fugiat.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe harum odit eaque eveniet aliquam eligendi
+            nam sunt, dolore excepturi quisquam consectetur voluptatem itaque pariatur dolores quos id voluptate
+            praesentium sed!
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio vel doloremque ut fugit maxime nemo aut
+            est, eum, illo laboriosam sit ullam repellendus soluta recusandae consequatur iste quos et nisi?
+        </p>
+    </div>
+    <div class="img"><img src="s.jpg" alt=""></div>
+
+    <script>
+        let side1 = document.getElementById("side1")
+        let side2 = document.getElementById("side2")
+
+        window.addEventListener("scroll" ,function(){
+            side1.style.left = -window.pageYOffset +"px"
+            side2.style.left = window.pageYOffset +"px"
+        })
+    </script>
+</body>
+
+</html>

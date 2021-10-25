@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>menu desplegable</title>
+</head>
+<body>
+    <div class="card">
+        <div class="content">
+            <div class="imgbox">
+                <img src="a.jpg" alt="" srcset="">
+            </div>
+            <h2>nombre de la persona<br/><span>descripcion o carrera</span></h2>
+        </div>
+        <ul class="navegacion">
+            <li>
+                <a href="#">
+                    <ion-icon name="person-outline"></ion-icon>
+                    Editar perfil
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    Mensaje
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="construct-outline"></ion-icon>
+                    Configuracion
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="help-outline"></ion-icon>
+                    ayuda
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <ion-icon name="log-out-outline"></ion-icon>
+                    cerrar sesion
+                </a>
+            </li>
+        </ul>
+        <div class="toggle">
+            <ion-icon name="arrow-down-outline"></ion-icon>
+        </div>
+        <script>
+            const card = document.querySelector('.card')
+            const cardToggle = document.querySelector('.toggle')
+            cardToggle.onclick = function(){
+                card.classList.toggle('active')
+            }
+        </script>
+    </div>
+    <!-- ionicons.com -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
